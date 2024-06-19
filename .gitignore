@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+venv/
+
+*.txt
+*.csv
+*.png
+
+youtubeAPI_*.py
