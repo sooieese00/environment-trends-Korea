@@ -3,7 +3,6 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
 import pandas as pd
 import os
-from datetime import datetime
 
 def search_youtube_videos(api_key, query, max_results=50, page_token=None, published_after=None, published_before=None):
     youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=api_key)
@@ -112,8 +111,8 @@ def main(api_key, query, max_results=50, filename="processed_video_ids.txt", out
             if not next_page_token:
                 break
 
-# YouTube Data API 키를 여기에 입력하세요
-api_key = "AIzaSyDjGoXBcmSVy8Ohh4OSJbDHdAMV_0yXLbc"
+# YouTube Data API 키
+api_key = ""
 
 # 검색할 키워드
 query = "환경"
